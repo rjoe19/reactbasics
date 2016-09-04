@@ -16,17 +16,40 @@
             </div>;
           }
       });
+
+
+      // var AnotherComponent = React.createClass({
+      //     render: function() {
+      //       return <div>
+      //               <h1>this.props.text}</h1>
+      //       </div>;
+      //     }
+      // });
+
       React.render(<div>
                   <MyComponent text="Hello World">
-                  This is a hello.
+                  This is a hello - children
                   </MyComponent>
                   <MyComponent text="How are You?">
-                  This is a how are you.
+                  This is a how are you -children
                   </MyComponent>
                   <MyComponent text="Goodbye">
-                  This is a goodbye.
+                  This is a goodbye - children
                   </MyComponent>
                   </div>, document.getElementById('react-container'));
+
+
+      // React.render(<div>
+      //             <AnotherComponent text="Hello World">
+      //             This is a hello - children
+      //             </AnotherComponent>
+      //             <AnotherComponent text="How are You?">
+      //             This is a how are you -children
+      //             </AnotherComponent>
+      //             <AnotherComponent text="Goodbye">
+      //             This is a goodbye - children
+      //             </AnotherComponent>
+      //             </div>, document.getElementById('react-container'));
     </script>
   </body>
 </html>
